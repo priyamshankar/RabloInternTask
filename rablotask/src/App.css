@@ -29,9 +29,17 @@ button{
 
 .progress{
   position: relative;
+  display: flex;
+  
   background-color: #408FFF;
   border-radius: 20px;
-  max-width: 60%;
+  margin: auto;
+	height: 15px;
+	max-width: 800px;
+}
+.progress h3{
+  color: #0068FA;
+  margin-top: 30px;
 }
 
 .progress-done{
@@ -40,7 +48,9 @@ button{
 	align-items: center;
 	justify-content: center;
   border-radius: 20px;
-  max-width: 60%;
+  /* max-width: 60%; */height: 100%;
+	width: 0;
+	opacity: 0;
   transition: 1s ease 0.3s;
 
 }
@@ -67,7 +77,7 @@ button{
 }
 
 .bgTop {
-  z-index: 15;
+  z-index: 5;
   opacity: 0.15;
 }
 .bgMiddle {
@@ -75,7 +85,7 @@ button{
   opacity: 0.3;
 }
 .bgBottom {
-  z-index: 5;
+  z-index: 15;
   opacity: 0.5;
 }
 .wave {

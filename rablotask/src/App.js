@@ -9,7 +9,7 @@ function App() {
     <div>
       <Navbar />
       <Personalinfo />
-      <Progressbar status='100'/>
+      <Progressbar status='50'/>
       <Waves />
     </div>
   );

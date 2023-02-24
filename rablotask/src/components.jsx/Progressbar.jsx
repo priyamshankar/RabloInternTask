@@ -11,7 +11,8 @@ function Progressbar ({status}) {
     }, 200);
   return (
     <div className='progress'>
-        <div className='progress-done' style={style}>{status}%</div>
+        <div className='progress-done' style={style}></div>
+        <h3>{status}%</h3>
     </div>
   )
 }
