@@ -1,123 +1,129 @@
-*{
+* {
   box-sizing: border-box;
 }
-body{
-  background-image: linear-gradient(105deg,#A6B5FD 50%,#BABCFE 90%);
+body {
+  background-image: linear-gradient(105deg, #a6b5fd 50%, #babcfe 90%);
   font-family: "Poppins", Sans-serif;
 }
 
-button{
-  background-color: #4D3699;
+.button {
+  background-color: #4d3699;
   border-style: solid;
   border-radius: 7px;
-  
+  width: 100px;
+}
+.button:hover {
+  background-color: #f6f6f6;
+  cursor: pointer;
 }
 
-.navbar{
-  margin: 0%;
-  padding: 0%;
+.navbar {
   max-width: 100%;
-  background-color: #A5B4FF;
   max-height: 10%;
+  background-color: #a5b4ff;
 }
 
-.navbar img{
+.navbar img {
   margin-left: 5%;
 }
 
 /* progress bar */
 
-.progress{
+.progress {
   position: relative;
   display: flex;
-  
-  background-color: #408FFF;
+
+  background-color: #408fff;
   border-radius: 20px;
   margin: auto;
-	height: 15px;
-	max-width: 800px;
+  height: 15px;
+  max-width: 800px;
 }
-.progress h3{
-  color: #0068FA;
+.progress h3 {
+  color: #0068fa;
   margin-top: 30px;
 }
 
-.progress-done{
-  background:linear-gradient(to left,#0146a7,#0068FA) ;
+.progress-done {
+  background: linear-gradient(to left, #0146a7, #0068fa);
   display: flex;
-	align-items: center;
-	justify-content: center;
+  align-items: center;
+  justify-content: center;
   border-radius: 20px;
-  /* max-width: 60%; */height: 100%;
-	width: 0;
-	opacity: 0;
-  transition: 1s ease 0.3s;
-
-}
-/* waves */
-@keyframes move_wave {
-  0% {
-      transform: translateX(0) translateZ(0) scaleY(1)
-  }
-  50% {
-      transform: translateX(-25%) translateZ(0) scaleY(0.55)
-  }
-  100% {
-      transform: translateX(-50%) translateZ(0) scaleY(1)
-  }
-}
-.waveWrapper {
-  overflow: hidden;
-  position: absolute;
-  left: 0;
-  right: 0;
-  bottom: 0;
-  top: 0;
-  margin: auto;
-}
-
-.bgTop {
-  z-index: 5;
-  opacity: 0.15;
-}
-.bgMiddle {
-  z-index: 10;
-  opacity: 0.3;
-}
-.bgBottom {
-  z-index: 15;
-  opacity: 0.5;
-}
-.wave {
-  position: absolute;
-  left: 0;
-  width: 200%;
+  /* max-width: 60%; */
   height: 100%;
-  background-repeat: repeat no-repeat;
-  background-position: 0 bottom;
-  transform-origin: center bottom;
+  width: 0;
+  opacity: 0;
+  transition: 1s ease 0.3s;
 }
-.waveTop {
-  background-image: url('http://front-end-noobs.com/jecko/img/wave-top.png');
-  background-size: 50% 100px;
+
+.form {
+  height: 84vh;
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin:auto ;
+  /* gap: 1rem; */
+  /* background-color: #94dbfa; */
 }
-.waveAnimation .waveTop {
-animation: move-wave 3s;
- -webkit-animation: move-wave 3s;
- -webkit-animation-delay: 1s;
- animation-delay: 1s;
+
+.personal-info-form-fields {
+  /* height: 84vh; */
+  width: 50vw;
+  margin:auto;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background-color: #0147AA;
+  
+  border-radius: 2rem;
+  gap: 0.5rem;
+  padding: 3rem 5rem;
 }
-.waveMiddle {
-  background-image: url('http://front-end-noobs.com/jecko/img/wave-mid.png');
-  background-size: 50% 120px;
+.personal-info-form-fields input {
+  background-color: transparent;
+  padding: 1rem;
+  border: 0.1rem solid #000000;
+  border-radius: 0.4rem;
+  color: white;
+  width: 100%;
+  font-size: 1rem;
+  /* gap: 0.5rem; */
+  
 }
-.waveAnimation .waveMiddle {
-  animation: move_wave 10s linear infinite;
+.personal-info-form-fields input :focus {
+  border: 0.1rem solid #3d07a1;
+  outline: none;
 }
-.waveBottom {
-  background-image: url('http://front-end-noobs.com/jecko/img/wave-bot.png');
-  background-size: 50% 100px;
+.next {
+  background-color: #5b9890;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0.4 rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  display: block;
+  float: right;
 }
-.waveAnimation .waveBottom {
-  animation: move_wave 15s linear infinite;
+.navigation-button{
+    padding-top: 1rem;
+}
+.prev {
+  display: block;
+  background-color: #5b9890;
+  color: white;
+  padding: 1rem 2rem;
+  border: none;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 0.4 rem;
+  font-size: 1rem;
+  text-transform: uppercase;
+  transition: 0.3s ease-in-out;
+  float: left;
 }
