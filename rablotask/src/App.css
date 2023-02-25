@@ -134,7 +134,32 @@ body {
   transition: 0.3s ease-in-out;
   float: left;
 }
+.Alert{
+  border-style: solid;
+  border-radius: 0.5rem;
+  height: 50px;
+  width: 250px;
+  position: absolute;
+  background-color: #f35454;
+  z-index: 300;
+  display: none;
+  /* display:block; */
+  /* right :100;  */
+  top: 5cm;
 
+}
+.Alert p{
+  padding-left: 5%;
+  font-weight: bolder;
+  font-size: larger;
+}
+
+.Alert button{
+  display: inline;
+  float: right;
+  color: white;
+  background-color: red;
+}
 /* 
 .radial{
   display: flex;

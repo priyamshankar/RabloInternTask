@@ -2,12 +2,16 @@ import React, { useState } from 'react'
 
 function Progressbar ({status}) {
     const [style,setStyle]=useState({});
+    // console.log(status)
     setTimeout(() => {
+      if(status!='block'){
+
         const newStyle ={
-            opacity:1,
-            width: `${status}%`
+          opacity:1,
+          width: `${status}%`
         }
         setStyle(newStyle);
+      }
     }, 200);
   return (
     <div className='progress'>

@@ -6,3 +6,12 @@ export const slider = (amount)=>{
         })
     }
 }
+
+export const alertCloseBtn = (amount)=>{
+    return (dispatch)=>{
+        dispatch({
+            type:"alertCloseBtn",
+            payload : amount
+        })
+    }
+}

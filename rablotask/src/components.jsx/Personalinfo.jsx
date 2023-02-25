@@ -47,6 +47,7 @@ function Personalinfo() {
       navigate("/address");
     } else {
       alert("Fill all the columns");
+      // dispatch(actionCreators.alertCloseBtn("block"));
     }
   };
 
@@ -113,16 +114,9 @@ function Personalinfo() {
           id="photo"
         />
         <div className="navigation-button">
+          
           <button
             className="button prev"
-            onClick={(e) => {
-              e.preventDefault();
-            }}
-          >
-            <NavLink to="/">prev</NavLink>
-          </button>
-          <button
-            className="button next"
             onClick={(e) => {
               formValidation(e);
             }}
