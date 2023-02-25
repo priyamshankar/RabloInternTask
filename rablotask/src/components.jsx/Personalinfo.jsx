@@ -1,12 +1,13 @@
 import React, { useEffect } from "react";
 import { useDispatch } from "react-redux";
+import { NavLink } from "react-router-dom";
 import { actionCreators } from "../state/index";
 
 function Personalinfo() {
   const dispatch = useDispatch();
   useEffect(() => {
     return () => {
-      dispatch(actionCreators.slider(50));
+      dispatch(actionCreators.slider(10));
     };
   }, []);
 
@@ -36,8 +37,12 @@ function Personalinfo() {
         <label htmlFor="photo">Enter your photo</label>
         <input type="file" name="photo" id="photo" />
         <div className="navigation-button">
-          <button className="button prev">prev</button>
-          <button className="button next">next</button>
+          <button className="button prev" onClick={(e)=>{
+            e.preventDefault();
+          }}><NavLink to="/">prev</NavLink></button>
+          <button className="button next" onClick={(e)=>{
+            e.preventDefault();
+          }}><NavLink to="/address">Next</NavLink></button>
         </div>
       </form>
     </div>
